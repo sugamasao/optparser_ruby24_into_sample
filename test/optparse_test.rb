@@ -5,6 +5,7 @@ class OptparseTest < Test::Unit::TestCase
     %w[
       --ruby Ruby
       --perl Perl
+      --go-lang
       -d
     ]
   end
@@ -12,6 +13,7 @@ class OptparseTest < Test::Unit::TestCase
   data(:test_data, {
       ruby: 'ruby',
       perl: 'PERL',
+      'go-lang': 'go',
       d: true
   })
   def test_opt1(data)
@@ -24,6 +26,7 @@ class OptparseTest < Test::Unit::TestCase
   data(:test_data, {
       ruby: 'ruby',
       perl: 'PERL',
+      'go-lang': 'go',
       d: true
   })
   def test_opt2(data)

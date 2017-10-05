@@ -9,6 +9,9 @@ class OptparseSample
       options.on '-p', '--perl=VAL' do |val|
         val.upcase
       end
+      options.on '-g', '--go-lang' do
+        'go'
+      end
       options.on '-d' do
         true
       end
@@ -23,6 +26,9 @@ class OptparseSample
     end
     options.on '-p', '--perl=VAL' do |val|
       val.upcase
+    end
+    options.on '-g', '--go-lang' do
+      'go'
     end
     options.on '-d' do
       true
